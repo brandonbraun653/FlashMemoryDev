@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\src\at45db081.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_initialize.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\BusPirateCPP\src\bp_spi.cpp">
+      <Filter>BusPirateCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\BusPirateCPP\src\bus_pirate.cpp">
+      <Filter>BusPirateCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\BusPirateCPP\src\serial_driver.cpp">
+      <Filter>BusPirateCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{7fab524e-2149-4250-90fc-fbaac27a1014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tst">
+      <UniqueIdentifier>{a92501fd-b11b-4ae9-80e3-1feef5470826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusPirateCPP">
+      <UniqueIdentifier>{d1d6c783-3f8e-4414-acdc-db7e8c289845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusPirateCPP\lib">
+      <UniqueIdentifier>{e942c6a1-0b80-431e-ba90-fb20e31ec6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusPirateCPP\lib\Chimera">
+      <UniqueIdentifier>{60062b32-30b6-47a2-9296-708163634616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusPirateCPP\lib\Chimera\modules">
+      <UniqueIdentifier>{fa8c1470-0906-4483-81cc-ddb3b2bd297f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusPirateCPP\lib\Chimera\modules\memory">
+      <UniqueIdentifier>{a11d0a3b-6e51-4f00-89b9-02602e60496e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\FlashMemory\at45db\src\at45db081.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashMemory\at45db\src\at45db081_definitions.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\BusPirateCPP\src\bp_spi.hpp">
+      <Filter>BusPirateCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\BusPirateCPP\src\bus_pirate.hpp">
+      <Filter>BusPirateCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\BusPirateCPP\src\chimeraPort.hpp">
+      <Filter>BusPirateCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\BusPirateCPP\src\serial_driver.hpp">
+      <Filter>BusPirateCPP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\config.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\gpio.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\interface.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\logging.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\preprocessor.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\serial.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\spi.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\system.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\threading.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\types.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\utilities.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\watchdog.hpp">
+      <Filter>BusPirateCPP\lib\Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\blockDevice.hpp">
+      <Filter>BusPirateCPP\lib\Chimera\modules\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\flash.hpp">
+      <Filter>BusPirateCPP\lib\Chimera\modules\memory</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
