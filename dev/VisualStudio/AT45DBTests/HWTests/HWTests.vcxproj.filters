@@ -26,6 +26,63 @@
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp">
       <Filter>BusPirateCPP\lib\Chimera</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_read.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferLoad.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferRead.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferWrite.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_directPageRead.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_eraseChip.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_getDeviceInfo.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_getFlashSize.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_getPageSizeConfig.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isDeviceReady.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isErasePgmError.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isReadComplete.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isWriteComplete.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_pageWrite.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_readModifyWrite.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_readStatusRegister.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_useBinaryPageSize.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_useDataFlashPageSize.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_fixtures_at45db081.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -119,6 +176,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\flash.hpp">
       <Filter>BusPirateCPP\lib\Chimera\modules\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\FlashMemory\at45db\tst\test_fixtures_at45db081.hpp">
+      <Filter>tst</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

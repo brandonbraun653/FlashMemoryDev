@@ -39,8 +39,26 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferLoad.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferRead.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferWrite.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_directPageRead.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_eraseChip.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_getDeviceInfo.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_getFlashSize.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_getPageSizeConfig.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_initialize.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isDeviceReady.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isErasePgmError.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isReadComplete.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isWriteComplete.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_pageWrite.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_read.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_readModifyWrite.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_readStatusRegister.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_useBinaryPageSize.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_useDataFlashPageSize.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_fixtures_at45db081.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\src\at45db081.cpp" />
     <ClInclude Include="..\..\..\..\FlashMemory\at45db\src\at45db081.hpp" />
@@ -48,6 +66,7 @@
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp" />
+    <ClInclude Include="..\..\..\..\FlashMemory\at45db\tst\test_fixtures_at45db081.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp" />
