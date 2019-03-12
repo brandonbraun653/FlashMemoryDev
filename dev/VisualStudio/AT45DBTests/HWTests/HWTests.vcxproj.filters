@@ -121,4 +121,7 @@
       <Filter>BusPirateCPP\lib\Chimera\modules\memory</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
 </Project>

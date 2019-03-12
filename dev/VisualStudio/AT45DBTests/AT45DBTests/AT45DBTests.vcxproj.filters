@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gtest\gtest-all.cc" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gmock\gmock-all.cc" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\src\at45db081.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -85,6 +83,9 @@
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_initialize.cpp">
       <Filter>tst</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_read.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\FlashMemory\at45db\src\at45db081_definitions.hpp">
@@ -95,6 +96,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\mock\spi.hpp">
       <Filter>Chimera\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\mock\modules\memory\flash.hpp">
+      <Filter>Chimera\mock\modules\memory</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +122,12 @@
     </Filter>
     <Filter Include="tst">
       <UniqueIdentifier>{c53aab1b-8d69-46cf-99cd-e0d0cf1af4f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chimera\mock\modules">
+      <UniqueIdentifier>{b59e1e96-952f-4ba6-8d41-3ff2ba3b38d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chimera\mock\modules\memory">
+      <UniqueIdentifier>{a44f94cb-3346-4fe2-90c2-73978a1073a5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
