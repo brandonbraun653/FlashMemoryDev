@@ -89,9 +89,6 @@
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferLoad.cpp">
       <Filter>tst</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferRead.cpp">
-      <Filter>tst</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferWrite.cpp">
       <Filter>tst</Filter>
     </ClCompile>
@@ -138,6 +135,11 @@
       <Filter>tst</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_fixtures_at45db081.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gtest\gtest-all.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gmock\gmock-all.cc" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferRead.cpp">
       <Filter>tst</Filter>
     </ClCompile>
   </ItemGroup>
