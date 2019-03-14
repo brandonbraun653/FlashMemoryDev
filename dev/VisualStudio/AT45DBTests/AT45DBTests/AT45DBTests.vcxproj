@@ -39,9 +39,6 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferLoad.cpp" />
-    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferRead.cpp" />
-    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_bufferWrite.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_directPageRead.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_eraseChip.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_getDeviceInfo.cpp" />
@@ -56,6 +53,9 @@
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_read.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_readModifyWrite.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_readStatusRegister.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_sramCommit.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_sramLoad.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_sramRead.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_useBinaryPageSize.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_useDataFlashPageSize.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_fixtures_at45db081.cpp" />
