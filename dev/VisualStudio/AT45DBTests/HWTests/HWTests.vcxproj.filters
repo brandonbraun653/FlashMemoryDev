@@ -26,9 +26,6 @@
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp">
       <Filter>BusPirateCPP\lib\Chimera</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_read.cpp">
-      <Filter>tst</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_directPageRead.cpp">
       <Filter>tst</Filter>
     </ClCompile>
@@ -50,12 +47,6 @@
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isErasePgmError.cpp">
       <Filter>tst</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isReadComplete.cpp">
-      <Filter>tst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_isWriteComplete.cpp">
-      <Filter>tst</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_pageWrite.cpp">
       <Filter>tst</Filter>
     </ClCompile>
@@ -63,12 +54,6 @@
       <Filter>tst</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_readStatusRegister.cpp">
-      <Filter>tst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_useBinaryPageSize.cpp">
-      <Filter>tst</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_useDataFlashPageSize.cpp">
       <Filter>tst</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_fixtures_at45db081.cpp">
@@ -81,6 +66,12 @@
       <Filter>tst</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_sramCommit.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_genericFlashInterface.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_byteWrite.cpp">
       <Filter>tst</Filter>
     </ClCompile>
   </ItemGroup>

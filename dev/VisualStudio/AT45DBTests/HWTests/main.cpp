@@ -11,8 +11,18 @@
 
 using namespace ::testing;
 
+#ifdef SW_SIM
+#error Cannot have SW_SIM defined for HW tests
+#endif
+
+#ifndef HW_TEST
+#error Please define HW_TEST in the preprocessor
+#endif
+
+
 int main( int argc, char **argv )
 {
   InitGoogleTest( &argc, argv );
+  //::testing::GTEST_FLAG( filter ) = "HardwareFlash.ReadStatus*";
   return RUN_ALL_TESTS();
 }
