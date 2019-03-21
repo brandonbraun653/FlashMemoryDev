@@ -23,6 +23,6 @@ using namespace ::testing;
 int main( int argc, char **argv )
 {
   InitGoogleTest( &argc, argv );
-  //::testing::GTEST_FLAG( filter ) = "HardwareFlash.ReadStatus*";
+  ::testing::GTEST_FLAG( filter ) = "HardwareFlash.GFI*";
   return RUN_ALL_TESTS();
 }

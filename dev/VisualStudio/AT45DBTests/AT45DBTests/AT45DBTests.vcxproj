@@ -41,7 +41,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_byteWrite.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_directPageRead.cpp" />
-    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_eraseChip.cpp" />
+    <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_erase.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_genericFlashInterface.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_getDeviceInfo.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_getFlashSize.cpp" />
