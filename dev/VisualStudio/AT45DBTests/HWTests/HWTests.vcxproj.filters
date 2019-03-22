@@ -74,6 +74,9 @@
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_erase.cpp">
       <Filter>tst</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\chimera_flash.cpp">
+      <Filter>BusPirateCPP\lib\Chimera\modules\memory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">

@@ -61,6 +61,7 @@
     <ClCompile Include="..\..\..\..\lib\BusPirateCPP\src\serial_driver.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\chimera_flash.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
