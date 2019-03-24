@@ -56,6 +56,7 @@
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_sramLoad.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_sramRead.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_fixtures_at45db081.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\chimera_flash.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\src\at45db081.cpp" />
     <ClInclude Include="..\..\..\..\FlashMemory\at45db\src\at45db081.hpp" />
@@ -88,6 +89,7 @@
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\mock\watchdog.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\blockDevice.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\flash.hpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\tst\modules\memory\test_chimera_flash.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

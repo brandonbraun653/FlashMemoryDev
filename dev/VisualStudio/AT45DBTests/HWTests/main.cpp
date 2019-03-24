@@ -23,6 +23,6 @@ using namespace ::testing;
 int main( int argc, char **argv )
 {
   InitGoogleTest( &argc, argv );
-  ::testing::GTEST_FLAG( filter ) = "HardwareFlash.GFI_WriteRead_Binary_PageUnAligned_MultiPage*";
+  ::testing::GTEST_FLAG( filter ) = "HardwareFlash.GFI_Erase_Extended*";
   return RUN_ALL_TESTS();
 }

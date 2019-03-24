@@ -26,6 +26,6 @@ using namespace ::testing;
 int main(int argc, char **argv)
 {
   InitGoogleTest(&argc, argv);
-  //::testing::GTEST_FLAG( filter ) = "VirtualFlash.DirectPageRead_Null*";
+  //::testing::GTEST_FLAG( filter ) = "FlashUtil_CompositeSections.UnAlignedMultiPageBlockSector*";
   return RUN_ALL_TESTS();
 }

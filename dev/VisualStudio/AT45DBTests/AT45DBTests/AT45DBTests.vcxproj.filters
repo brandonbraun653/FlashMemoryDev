@@ -133,6 +133,12 @@
     <ClCompile Include="..\..\..\..\FlashMemory\at45db\tst\test_at45db081_erase.cpp">
       <Filter>tst</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\chimera_flash.cpp">
+      <Filter>Chimera\modules\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Chimera\tst\modules\memory\test_chimera_flash.cpp">
+      <Filter>Chimera\tst\modules\memory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\FlashMemory\at45db\src\at45db081_definitions.hpp">
@@ -178,6 +184,15 @@
     </Filter>
     <Filter Include="Chimera\mock\modules\memory">
       <UniqueIdentifier>{a44f94cb-3346-4fe2-90c2-73978a1073a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chimera\tst">
+      <UniqueIdentifier>{6dbace22-e321-4261-9967-06e5f98cd42e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chimera\tst\modules">
+      <UniqueIdentifier>{3e005f26-c826-46a8-8d04-810c31947552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chimera\tst\modules\memory">
+      <UniqueIdentifier>{12535bef-7ef8-4894-aa37-5ba950cf1ec6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
