@@ -1,0 +1,29 @@
+{
+  "version":"0.2.0",
+  "configurations": [
+    {
+      "type": "cortex-debug",
+      "request": "launch",
+      "name": "test_at25: STM32L432KB Debug (OpenOCD)",
+      "servertype": "openocd",
+      "cwd": "${workspaceRoot}",
+      "runToMain": true,
+      "executable": "./build/artifacts/bin/test_at25",
+      "device": "STM32L432KB",
+      "svdFile": "./lib/CommonTools/svd/STM32L4x2.svd",
+      "configFiles": [
+        "./lib/CommonTools/openocd/scripts/interface/stlink.cfg",
+        "./lib/CommonTools/openocd/scripts/target/stm32l4x.cfg"
+      ],
+      "swoConfig": {
+          "enabled": true,
+          "cpuFrequency": 80000000,
+          "swoFrequency": 2000000,
+          "source": "probe",
+          "decoders": [
+              { "type": "console", "label": "ITM", "port": 0 }
+          ]
+      }
+    }
+  ]
+}

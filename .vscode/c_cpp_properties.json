@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Embedded",
+            "includePath": [
+                "${workspaceFolder}/lib/CommonTools/googletest/**",
+                "${workspaceFolder}/lib/CommonTools/cpputest/include",
+                "${workspaceFolder}/lib/Aurora",
+                "${workspaceFolder}/lib/Chimera",
+                "${workspaceFolder}/FlashMemory",
+                "${workspaceFolder}/lib/Aurora/lib/type_safe/include",
+                "${workspaceFolder}/lib/Aurora/lib/littlefs/lfs",
+                "${workspaceFolder}/lib/FreeRTOS/portable/GCC/ARM_CM4F",
+                "${workspaceFolder}/lib/FreeRTOS/include",
+                "${workspaceFolder}/lib/Thor",
+                "${workspaceFolder}/config/freertos",
+                "${BOOST_ROOT}/boost_1_70_0"
+            ],
+            "defines": [
+                "EMBEDDED",
+                "TARGET_STM32L4",
+                "STM32L432xx",
+                "USING_FREERTOS_THREADS",
+                "FREERTOS_CFG_PORT_ARM_CM4F=1",
+                "CPPUTEST_MEM_LEAK_DETECTION_DISABLED",
+                "CPPUTEST_STD_CPP_LIB_DISABLED"
+            ],
+            "cppStandard": "c++20",
+            "cStandard": "c11",
+            "intelliSenseMode": "msvc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
