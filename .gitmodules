@@ -10,3 +10,9 @@
 [submodule "lib/FreeRTOS"]
 	path = lib/FreeRTOS
 	url = https://github.com/brandonbraun653/FreeRTOS.git
+[submodule "FlashMemory"]
+	path = FlashMemory
+	url = https://github.com/brandonbraun653/FlashMemory.git
+[submodule "lib/Chimera"]
+	path = lib/Chimera
+	url = https://github.com/brandonbraun653/Chimera.git
