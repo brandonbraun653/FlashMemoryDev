@@ -224,6 +224,8 @@ static void initializeSerial()
  */
 static void test_thread( void *arg )
 {
+  using namespace Adesto::Testing;
+
   /*-------------------------------------------------
   Configure the output style:
     - Colorized
@@ -238,18 +240,34 @@ static void test_thread( void *arg )
   initializeSerial();
 
   /*-------------------------------------------------
-  Allocate the device driver
+  Allocate the device drivers
   -------------------------------------------------*/
+  auto serial = Chimera::Serial::getDriver( serialChannel );
+
   DeviceDriver = std::make_shared<Adesto::AT25::Driver>();
   DeviceDriver->configure( spiChannel );
 
-  Adesto::Testing::assignDUT( DeviceDriver );
-  Adesto::Testing::assignSPIChannelConfig( spiChannel );
+  assignDUT( DeviceDriver );
+  assignSPIChannelConfig( spiChannel );
+  assignSerialChannelConfig( serialChannel );
 
   /*-------------------------------------------------
   Run the tests then break
   -------------------------------------------------*/
-  volatile int rcode = CommandLineTestRunner::RunAllTests( 2, av_override );
+  snprintf(printBuffer.data(), printBuffer.size(), "Starting Adesto AT25 driver tests. This may take a few minutes.\n" );
+  serial->lock();
+  serial->write( printBuffer.data(), strlen( printBuffer.data() ) );
+  serial->await( Chimera::Event::TRIGGER_WRITE_COMPLETE, Chimera::Threading::TIMEOUT_BLOCK );
+  serial->unlock();
+
+  int rcode = CommandLineTestRunner::RunAllTests( 2, av_override );
+
+  snprintf(printBuffer.data(), printBuffer.size(), "Test exit with code: %d\n", rcode );
+  serial->lock();
+  serial->write( printBuffer.data(), strlen( printBuffer.data() ) );
+  serial->await( Chimera::Event::TRIGGER_WRITE_COMPLETE, Chimera::Threading::TIMEOUT_BLOCK );
+  serial->unlock();
+
   while ( 1 )
   {
     Chimera::insert_debug_breakpoint();

@@ -13,6 +13,7 @@
 
 /* Chimera Includes */
 #include <Chimera/spi>
+#include <Chimera/serial>
 
 /* Adesto Includes */
 #include <tests/common/test_common_resources.hpp>
@@ -22,6 +23,7 @@ Static Data
 -------------------------------------------------------------------------------*/
 static Aurora::Memory::IGenericDevice_sPtr DUT;
 static Chimera::SPI::Channel spiChannel;
+static Chimera::Serial::Channel serialChannel;
 
 namespace Adesto::Testing
 {
@@ -30,6 +32,7 @@ namespace Adesto::Testing
   -------------------------------------------------------------------------------*/
   std::array<uint8_t, 256> readBuffer;
   std::array<uint8_t, 256> writeBuffer;
+  std::array<char, 100> printBuffer;
 
   /*-------------------------------------------------------------------------------
   Public Functions
@@ -55,5 +58,16 @@ namespace Adesto::Testing
   Chimera::SPI::Channel getSPIChannelConfig()
   {
     return spiChannel;
+  }
+
+
+  void assignSerialChannelConfig( const Chimera::Serial::Channel channel )
+  {
+    serialChannel = channel;
+  }
+
+  Chimera::Serial::Channel getSerialChannelConfig()
+  {
+    return serialChannel;
   }
 }  // namespace Adesto::Testing

@@ -27,6 +27,7 @@ namespace Adesto::Testing
   -------------------------------------------------------------------------------*/
   extern std::array<uint8_t, 256> readBuffer;
   extern std::array<uint8_t, 256> writeBuffer;
+  extern std::array<char, 100> printBuffer;
 
   /*-------------------------------------------------------------------------------
   Public Functions
@@ -60,6 +61,21 @@ namespace Adesto::Testing
    *  @return Chimera::SPI::Channel
    */
   Chimera::SPI::Channel getSPIChannelConfig();
+
+  /**
+   *  Sets the Serial channel the DUT is using
+   *
+   *  @param[in]  channel   The Serial channel to use
+   *  @return void
+   */
+  void assignSerialChannelConfig( const Chimera::Serial::Channel channel );
+
+  /**
+   *  Gets the configured Serial channel for the DUT
+   *
+   *  @return Chimera::Serial::Channel
+   */
+  Chimera::Serial::Channel getSerialChannelConfig();
 }  // namespace Adesto::Testing
 
 #endif  /* !ADESTO_MEMORY_TESTS_COMMON_HPP */
