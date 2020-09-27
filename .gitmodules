@@ -1,12 +1,12 @@
 [submodule "FlashMemory"]
 	path = FlashMemory
-	url = git@github.com:brandonbraun653/FlashMemory.git
+	url = https://github.com/brandonbraun653/FlashMemory.git
 [submodule "lib/BusPirateCPP"]
 	path = lib/BusPirateCPP
-	url = git@github.com:brandonbraun653/BusPirateCPP.git
+	url = https://github.com/brandonbraun653/BusPirateCPP.git
 [submodule "lib/Chimera"]
 	path = lib/Chimera
-	url = git@github.com:brandonbraun653/Chimera.git
+	url = https://github.com/brandonbraun653/Chimera.git
 [submodule "lib/Thor"]
 	path = lib/Thor
 	url = https://github.com/brandonbraun653/Thor.git
