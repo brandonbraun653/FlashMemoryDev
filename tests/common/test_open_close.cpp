@@ -1,9 +1,9 @@
 /********************************************************************************
  *  File Name:
- *    test_get_device_id.cpp
+ *    test_open_close.cpp
  *
  *  Description:
- *    Common test for grabbing the device identifiers
+ *    Common test for opening/closing a memory device
  *
  *  2020 | Brandon Braun | brandonbraun653@gmail.com
  *******************************************************************************/
@@ -20,12 +20,12 @@
 /*-------------------------------------------------------------------------------
 Base Test Groups
 -------------------------------------------------------------------------------*/
-TEST_GROUP( DeviceID ){};
+TEST_GROUP( IOCtl ){};
 
 /*-------------------------------------------------
 Test Cases
 -------------------------------------------------*/
-TEST( DeviceID, Readable )
+TEST( IOCtl, Open )
 {
   /*-------------------------------------------------
   Initialize
@@ -35,20 +35,29 @@ TEST( DeviceID, Readable )
   /*-------------------------------------------------
   Call FUT
   -------------------------------------------------*/
-  Aurora::Memory::Properties props = DUT->getDeviceProperties();
+  Aurora::Memory::Status result = DUT->open();
 
   /*-------------------------------------------------
   Verify:
-    - Device is some kind of Adesto memory
-    - Expected fields are non-zero
   -------------------------------------------------*/
-  CHECK_EQUAL( Adesto::JEDEC_CODE, props.jedec );
-  CHECK( props.pageSize > 0 );
-  CHECK( props.numPages > 0 );
-  CHECK( props.blockSize > 0 );
-  CHECK( props.numBlocks > 0 );
-  CHECK( props.sectorSize > 0 );
-  CHECK( props.numSectors > 0 );
-  CHECK( props.endAddress > 0 );
-  // Don't check start address as the user might locate it at a non-zero address
+  CHECK( Aurora::Memory::Status::ERR_OK == result );
+}
+
+TEST( IOCtl, Close )
+{
+  /*-------------------------------------------------
+  Initialize
+  -------------------------------------------------*/
+  auto DUT = Adesto::Testing::getDUT();
+
+  /*-------------------------------------------------
+  Call FUT
+  -------------------------------------------------*/
+  DUT->open();
+  Aurora::Memory::Status result = DUT->close();
+
+  /*-------------------------------------------------
+  Verify:
+  -------------------------------------------------*/
+  CHECK( Aurora::Memory::Status::ERR_OK == result );
 }

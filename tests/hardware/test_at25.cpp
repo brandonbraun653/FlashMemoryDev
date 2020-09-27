@@ -15,6 +15,7 @@
 /* STL Includes */
 #include <array>
 #include <cstring>
+#include <memory>
 
 /* Boost Includes */
 #include <boost/circular_buffer.hpp>
@@ -38,6 +39,9 @@
 /* Test Framework Includes */
 #include <CppUTest/CommandLineTestRunner.h>
 
+/* Test Driver Includes */
+#include <tests/common/test_common_resources.hpp>
+
 /*-------------------------------------------------------------------------------
 Constants
 -------------------------------------------------------------------------------*/
@@ -52,10 +56,13 @@ static void initializeSPI();
 static void initializeSerial();
 
 /*-------------------------------------------------------------------------------
+Public Data
+-------------------------------------------------------------------------------*/
+std::shared_ptr<Adesto::AT25::Driver> DeviceDriver;
+
+/*-------------------------------------------------------------------------------
 Static Data
 -------------------------------------------------------------------------------*/
-static std::array<uint8_t, 500> buffer;
-
 /*-------------------------------------------------
 Serial Driver Configuration
 -------------------------------------------------*/
@@ -72,11 +79,6 @@ static boost::circular_buffer<uint8_t> sTXCircularBuffer( CircularBufferSize );
 // Serial Recieve Buffers
 static std::array<uint8_t, HWBufferSize> sRXHWBuffer;
 static boost::circular_buffer<uint8_t> sRXCircularBuffer( CircularBufferSize );
-
-/*-------------------------------------------------------------------------------
-Public Data
--------------------------------------------------------------------------------*/
-Adesto::AT25::Driver DUT;
 
 /*-------------------------------------------------------------------------------
 Public Functions
@@ -226,9 +228,8 @@ static void test_thread( void *arg )
   Configure the output style:
     - Colorized
     - Verbose
-    - JUnit
   -------------------------------------------------*/
-  const char *av_override[] = { "-c", "-v", "-ojunit" };
+  const char *av_override[] = { "-c", "-v" };
 
   /*-------------------------------------------------
   Initialize HW Resources
@@ -237,27 +238,20 @@ static void test_thread( void *arg )
   initializeSerial();
 
   /*-------------------------------------------------
-  Initialize the Adesto Driver
+  Allocate the device driver
   -------------------------------------------------*/
-  Adesto::AT25::DeviceInfo info;
-  memset( &info, 0, sizeof( info ) );
+  DeviceDriver = std::make_shared<Adesto::AT25::Driver>();
+  DeviceDriver->configure( spiChannel );
 
-  auto mem = Adesto::AT25::Driver();
-  mem.configure( spiChannel );
-  mem.readDeviceInfo( info );
-
-  // Test a read
-  buffer.fill( 0 );
-  mem.read( 0, buffer.data(), buffer.size() );
-
+  Adesto::Testing::assignDUT( DeviceDriver );
+  Adesto::Testing::assignSPIChannelConfig( spiChannel );
 
   /*-------------------------------------------------
-  Break into the debugger
+  Run the tests then break
   -------------------------------------------------*/
   volatile int rcode = CommandLineTestRunner::RunAllTests( 2, av_override );
   while ( 1 )
   {
     Chimera::insert_debug_breakpoint();
-    info.density = Adesto::DENSITY_32MBIT;
   }
 }

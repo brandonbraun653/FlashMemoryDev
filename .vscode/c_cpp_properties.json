@@ -3,6 +3,7 @@
         {
             "name": "Embedded",
             "includePath": [
+                "${workspaceFolder}",
                 "${workspaceFolder}/lib/CommonTools/googletest/**",
                 "${workspaceFolder}/lib/CommonTools/cpputest/include",
                 "${workspaceFolder}/lib/Aurora",

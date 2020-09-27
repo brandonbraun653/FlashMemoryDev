@@ -19,6 +19,7 @@ target_link_libraries(${TGT1} PRIVATE
   CppUTest
   adesto_common_tests
   adesto_core
+  aurora_core
   chimera_src
   freertos_cfg
   freertos_core
@@ -34,3 +35,4 @@ target_link_libraries(${TGT1} PRIVATE
   # Target Properties
   prj_device_target
 )
+target_include_directories(${TGT1} PRIVATE ${PROJECT_ROOT})
